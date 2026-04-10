@@ -98,7 +98,7 @@ createButton("Auto Farm", 300, function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/renardofficiel/game/refs/heads/main/MurderMystery2/main.lua', true))()
 end)
 
-createButton("Test", 335, function()
+createButton("Overdrive Hub", 335, function()
     loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
 end)
 

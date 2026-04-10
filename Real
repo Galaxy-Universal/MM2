@@ -12,7 +12,7 @@ ScreenGui.Name = "MoonHub"
 
 local Frame = Instance.new("Frame")
 Frame.Parent = ScreenGui
-Frame.Size = UDim2.new(0, 270, 0, 380) -- increased height
+Frame.Size = UDim2.new(0, 270, 0, 380)
 Frame.Position = UDim2.new(0.5, -135, 0.5, -190)
 Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Frame.BorderSizePixel = 0
@@ -94,11 +94,8 @@ createButton("Vertex", 265, function()
     loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
 end)
 
-createButton("Auto Farm", 300, function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/renardofficiel/game/refs/heads/main/MurderMystery2/main.lua', true))()
-end)
-
-createButton("Overdrive Hub", 335, function()
+-- moved up (no gap now)
+createButton("Test", 300, function()
     loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
 end)
 

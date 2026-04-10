@@ -99,7 +99,7 @@ createButton("Auto Farm", 300, function()
 end)
 
 createButton("Script 9", 335, function()
-    loadstring(game:HttpGet("PASTE_LINK_HERE_9"))()
+    loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
 end)
 
 -- =========================

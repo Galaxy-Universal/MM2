@@ -91,7 +91,7 @@ createButton("YarhmYARHM", 230, function()
 end)
 
 createButton("Vertex", 265, function()
-    loadstring(game:HttpGet("PASTE_loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
+    loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
 end)
 
 createButton("Auto Farm", 300, function()

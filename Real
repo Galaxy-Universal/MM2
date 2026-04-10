@@ -12,15 +12,12 @@ ScreenGui.Name = "MoonHub"
 
 local Frame = Instance.new("Frame")
 Frame.Parent = ScreenGui
-Frame.Size = UDim2.new(0, 270, 0, 260)
-Frame.Position = UDim2.new(0.5, -135, 0.5, -130)
+Frame.Size = UDim2.new(0, 270, 0, 380) -- increased height
+Frame.Position = UDim2.new(0.5, -135, 0.5, -190)
 Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Frame.BorderSizePixel = 0
 
--- =========================
--- 🔝 HEADER (SEPARATED)
--- =========================
-
+-- HEADER
 local Header = Instance.new("Frame")
 Header.Parent = Frame
 Header.Size = UDim2.new(1, 0, 0, 40)
@@ -35,7 +32,7 @@ Title.TextColor3 = Color3.fromRGB(255,255,255)
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 18
 
--- ❌ Close Button (ONLY in header)
+-- Close Button
 local Close = Instance.new("TextButton")
 Close.Parent = Header
 Close.Size = UDim2.new(0, 40, 1, 0)
@@ -50,10 +47,7 @@ Close.MouseButton1Click:Connect(function()
     ScreenGui:Destroy()
 end)
 
--- =========================
--- 🔘 BUTTONS (START LOWER)
--- =========================
-
+-- Button creator
 local function createButton(text, posY, callback)
     local Button = Instance.new("TextButton")
     Button.Parent = Frame
@@ -68,7 +62,10 @@ local function createButton(text, posY, callback)
     Button.MouseButton1Click:Connect(callback)
 end
 
--- Scripts (start AFTER header)
+-- =========================
+-- 🔥 SCRIPTS
+-- =========================
+
 createButton("Onyx Hub", 55, function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/FyroxScript/OnyxHub/refs/heads/main/Script"))()
 end)
@@ -89,8 +86,24 @@ createButton("Zuri Hub", 195, function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ZuriHubV2/dump/refs/heads/main/test"))()
 end)
 
+createButton("YarhmYARHM", 230, function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/refs/heads/main/source/yarhm/1.21/yarhm.lua"))()
+end)
+
+createButton("Vertex", 265, function()
+    loadstring(game:HttpGet("PASTE_loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
+end)
+
+createButton("Script 8", 300, function()
+    loadstring(game:HttpGet("PASTE_LINK_HERE_8"))()
+end)
+
+createButton("Script 9", 335, function()
+    loadstring(game:HttpGet("PASTE_LINK_HERE_9"))()
+end)
+
 -- =========================
--- 📱 DRAG (HEADER ONLY)
+-- DRAG
 -- =========================
 
 local dragging = false

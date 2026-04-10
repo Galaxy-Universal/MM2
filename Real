@@ -86,7 +86,7 @@ createButton("Zuri Hub", 195, function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ZuriHubV2/dump/refs/heads/main/test"))()
 end)
 
-createButton("YarhmYARHM", 230, function()
+createButton("Yarhm", 230, function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/refs/heads/main/source/yarhm/1.21/yarhm.lua"))()
 end)
 
@@ -95,10 +95,10 @@ createButton("Vertex", 265, function()
 end)
 
 createButton("Auto Farm", 300, function()
-    loadstring(game:HttpGet("https://api.project-reverse.org/run/eyJpZCI6ImZiMTIyNTRmLThhNDgtNGI3OS04OGRkLTUzZjgxYmU1Njc2MiIsImtpbmQiOiJsb2FkZXIiLCJ2aXN1YWwiOnsiaWQiOiJtbTJldmVudCJ9fQ"))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/renardofficiel/game/refs/heads/main/MurderMystery2/main.lua', true))()
 end)
 
-createButton("Script 9", 335, function()
+createButton("Test", 335, function()
     loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
 end)
 

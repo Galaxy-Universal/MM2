@@ -94,8 +94,7 @@ createButton("Vertex", 265, function()
     loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
 end)
 
--- moved up (no gap now)
-createButton("Test", 300, function()
+createButton("Overdrive Hub", 300, function()
     loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
 end)
 

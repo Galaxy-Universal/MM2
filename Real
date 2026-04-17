@@ -27,7 +27,7 @@ local Title = Instance.new("TextLabel")
 Title.Parent = Header
 Title.Size = UDim2.new(1, -40, 1, 0)
 Title.BackgroundTransparency = 1
-Title.Text = "Moon Script Hub"
+Title.Text = "MM2 Script List"
 Title.TextColor3 = Color3.fromRGB(255,255,255)
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 18
@@ -87,7 +87,7 @@ createButton("Zuri Hub", 195, function()
 end)
 
 createButton("Exodus Hub", 230, function()
-    loadstring(game:HttpGet("PASTE_YOUR_LINK_HERE"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galaxy-Universal/MM2/refs/heads/main/ExodusHub.lua"))()
 end)
 
 createButton("Yarhm", 265, function()
